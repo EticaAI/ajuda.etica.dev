@@ -7,9 +7,9 @@ suas aplicações que (idealmente, mas não obrigatoriamente) seguem a metodolog
 de [aplicação de 12 fatores](#aplicação-de-12-fatores).
 **Não atendemos usuários finais**, mas você, como administrador de time e
 responsável, pode. Nós procuramos manter com servidores que rodam as
-apps dos colegas com ótimo custo-benefício ao ponto de poder dar poder de
-processamento decente sem cobrar valor financeiro de pessoas desenvolvedoras que
-ajudam comunidades de base (Veja
+apps dos colegas com ótimo custo-benefício ao ponto de ter opção poder dar
+processamento computacional de alta qualidade decente sem cobrar valor
+financeiro de pessoas desenvolvedoras que ajudam comunidades de base (Veja
 [Etica.AI Infrastructure: Clusters & VPS ↗](https://github.com/orgs/EticaAI/projects/2);
 e caso encontre mais baratos, avise!)_.
 
@@ -47,7 +47,7 @@ seguem a metodologia para software-como-serviço
 
 ### Aplicação de 12 fatores
 
-O PaaS da Etica.AI funcionará melhor se sua aplicação respeitar o conceito de
+O PaaS da Etica.AI funcionará melhor se sua solução respeitar o conceito de
 _Aplicação de 12 fatores_ que pode ser lido em <https://12factor.net/pt_br/>
 e cuja introdução é:
 
@@ -154,7 +154,11 @@ explícita ou que possam ser facilmente inferidas de
 
 ## Licença da documentação ajuda.etica.dev
 
-Domínio Público.
+[![Domínio Público](img/dominio-publico.png)](UNLICENSE)
+
+Na medida do possível segundo a lei, [EticaAI](https://github.com/EticaAI)
+renunciou a todos os direitos autorais e direitos conexos ou vizinhos a este
+trabalho para o [Domínio Público](UNLICENSE).
 
 Citação de fonte original em obras derivadas em nome da
 [Etica.AI](https://etica.ai) é bem vinda, mas não é exigida, nem mesmo como
