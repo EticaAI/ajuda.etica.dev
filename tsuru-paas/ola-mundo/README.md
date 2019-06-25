@@ -1,5 +1,7 @@
 # Olá Mundo no Etica.Dev
 
+_TODO: criar olá mundo mais genérico (fititnt, 2019-06-25 09:12 BRT)_
+
 ```bash
 # Comandos para logar
 tsuru target-add https://tsuru.etica.dev -s

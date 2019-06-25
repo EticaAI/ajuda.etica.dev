@@ -1,11 +1,25 @@
 # ajuda.etica.dev
-**[trabalho em progresso] Guia de ajuda do Águia Pescadora, o PaaS comunitário da Etica.AI**
+**[trabalho em progresso] Guia de ajuda do Águia Pescadora, a PaaS comunitária da Etica.AI**
 
+_TL;DR: use a PaaS comunitária da [Etica.AI ↗](https://etica.ai/) baseada no
+[Tsuru](#tsuru) para executar pontualmente tarefas pesadas ou manter online
+suas aplicações que (idealmente, mas não obrigatoriamente) seguem a metodologia
+de [aplicação de 12 fatores](#aplicação-de-12-fatores).
+**Não atendemos usuários finais**, mas você, como administrador de time e
+responsável, pode. Nós procuramos manter com servidores que rodam as
+apps dos colegas com ótimo custo-benefício ao ponto de poder dar poder de
+processamento decente sem cobrar valor financeiro de pessoas desenvolvedoras que
+ajudam comunidades de base (Veja
+[Etica.AI Infrastructure: Clusters & VPS ↗](https://github.com/orgs/EticaAI/projects/2);
+e caso encontre mais baratos, avise!)_.
+
+<!--
 _TL;DR: use o [Tsuru](#tsuru) para executar pontualmente ou manter online
 permanentemente em [servidores ↗](https://github.com/orgs/EticaAI/projects/2) da
 organização [Etica.AI ↗](https://etica.ai/) suas aplicações que (idealmente)
 seguem a metodologia para software-como-serviço
 [Aplicação de 12 fatores](#aplicação-de-12-fatores)._
+-->
 
 ----
 
@@ -62,7 +76,8 @@ responsabilidade.
 #### Backup de informações em de servidores remotos em Etica.Dev
 Sim, você pode usar o PaaS da Etica.AI como **opção extra** para receber
 Backups de outros projetos, porém recomendamos faça backups encriptados, mesmo
-que sejam fotos de caezinhos 🐶.
+que sejam fotos de caezinhos 🐶! É uma forma de se acostumar com boas práticas
+a serem seguitas em qualquer servidor que use.
 
 #### App Etica.Dev como agente de backups
 Você poderá usar um ou mais apps hospedados em Etica.Dev como um
