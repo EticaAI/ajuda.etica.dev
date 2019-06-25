@@ -1,6 +1,12 @@
 # ajuda.etica.dev
 **[trabalho em progresso] Guia de ajuda do Águia Pescadora, o PaaS comunitário da Etica.AI**
 
+_TL;DR: use o [Tsuru](#tsuru) para executar pontualmente ou manter online
+permanentemente em [servidores ↗](https://github.com/orgs/EticaAI/projects/2) da
+organização [Etica.AI ↗](https://etica.ai/) suas aplicações que (idealmente)
+seguem a metodologia para software-como-serviço
+[Aplicação de 12 fatores](#aplicação-de-12-fatores)._
+
 ----
 
 <!-- TOC depthFrom:2 -->
@@ -10,8 +16,9 @@
     - [Backup](#backup)
         - [Backup de informações de aplicações em Etica.Dev em datacenter remotos](#backup-de-informações-de-aplicações-em-eticadev-em-datacenter-remotos)
         - [Backup de informações em de servidores remotos em Etica.Dev](#backup-de-informações-em-de-servidores-remotos-em-eticadev)
-        - [App EticaDev como agente de backups](#app-eticadev-como-agente-de-backups)
+        - [App Etica.Dev como agente de backups](#app-eticadev-como-agente-de-backups)
     - [Domínios](#domínios)
+        - [HTTPS dos domínios](#https-dos-domínios)
     - [Tsuru](#tsuru)
     - [Minio](#minio)
 - [Páginas espelho de ajuda.etica.dev](#páginas-espelho-de-ajudaeticadev)
@@ -27,8 +34,8 @@
 ### Aplicação de 12 fatores
 
 O PaaS da Etica.AI funcionará melhor se sua aplicação respeitar o conceito de
-_Aplicação de 12 fatores_ que pode ser lido em <https://12factor.net/pt_br/> e
-tem a introdução resumida a seguir.
+_Aplicação de 12 fatores_ que pode ser lido em <https://12factor.net/pt_br/>
+e cuja introdução é:
 
 > Na era moderna, software é comumente entregue como um serviço: denominados *web apps*, ou *software-como-serviço*. A aplicação doze-fatores é uma metodologia para construir softwares-como-serviço que:
 >
@@ -57,9 +64,9 @@ Sim, você pode usar o PaaS da Etica.AI como **opção extra** para receber
 Backups de outros projetos, porém recomendamos faça backups encriptados, mesmo
 que sejam fotos de caezinhos 🐶.
 
-#### App EticaDev como agente de backups
+#### App Etica.Dev como agente de backups
 Você poderá usar um ou mais apps hospedados em Etica.Dev como um
-[agente inteligente](https://pt.wikipedia.org/wiki/Agente_inteligente) para
+[agente inteligente ↗](https://pt.wikipedia.org/wiki/Agente_inteligente) para
 automatizar tarefas de backups em servidores remotos sem armazear dados na nossa
 nuvem.
 
@@ -68,19 +75,23 @@ nuvem.
 -->
 
 ### Domínios
-Você pode usar seu próprio domínio de topo (seja ele pago
-[ou gratúito](https://freenom.com)) — recomendado caso queira servir para
-usuários finais! — apotando no provedor de DNS `CNAME app.etica.dev`.
-Adicionalmente por usar subdomínio de `*.app.etiva.dev` que já esta apontado
-para cluster de servidores da Etica.Dev.
+Você pode usar um ou mais domínios de topo (sejam eles pagos
+[ou gratúitos ↗](https://freenom.com)) — recomendado caso queira servir para
+usuários finais! — bastando que use o tsuru client e no seu provedor de DNS
+aponte os domínios para `CNAME app.etica.dev`. Por questão de comodidade (ou
+por você explicitamente ter interesse) pode configurar seu app como subdomínio
+de `*.app.etiva.dev`, que já foi preparado para apontar para o cluster de
+servidores da Etica.Dev.
 
+#### HTTPS dos domínios
 Temos SSL automática com Let's Encrypt por padrão em qualquer domínio/subdomínio
-apontado para nossos servidores. E sim, [você pode revotar nossa capacidade
-de gerar HTTPS](https://letsencrypt.org/docs/revoking/) sem ajuda da
-administração da nuvem.
+apontado para nossos servidores.
+
+Note que [você pode revotar nossa capacidade de servir conteudo HTTPS](https://letsencrypt.org/docs/revoking/)
+sem ajuda de pessoa que tenha nível de acesso de administração da nuvem.
 
 ### Tsuru
-> [Tsuru](https://tsuru.io/) é um software de Plataforma Como Serviço ("PaaS")
+> [Tsuru ↗](https://tsuru.io/) é um software de Plataforma Como Serviço ("PaaS")
 extensível e de verdadeiramente de código aberto (sem nem mesmo versão
 comercial) e que é pronto para uso em produção com Docker desde 2013.
 
@@ -99,13 +110,28 @@ pode implementar o seu usando [Tsuru](#tsuru).
 
 ## Páginas espelho de ajuda.etica.dev
 É possíve acessar esta documentação também via <http://ajuda-dev.etica.ai/>.
-Útil para clientes sem suporte a HTTPS ou o caso onde a documentação está
-em manutenção.
+Útil para clientes sem suporte a HTTPS ou o quando até mesmo aplicação que
+fornece a documentação está em manutenção.
 
 # Licença
 
-<!--
 ## Licença de softwares de pessoas desenvolvedoras que usam app.etica.dev
+**Exceto quando explicitado contrário e de forma clara, assuma que pessoas
+autoras (assim como é tendência em legislações ao redor do mundo) mantém todos
+os direitos de cópia e que licença do software é proprietaria.**
+
+O uso do PaaS da Etica.AI e/ou reaproveitamento de código ou documentação nosso
+por pessoas desenvolvedoras não implica em obrigação nem mesmo moral de dedicar
+software a licenças que não exigem licenciamento reciproco como Domínio Publico
+ou BSD. Pessoas autoras são livres até mesmo para relicenciar conteúdo dedicado
+ao Domínio público em licenças proprietarias ou de reprocidade forte, como GPL.
+
+<!--
+- Permissive and Copyleft Are Not Antonyms https://opensource.org/node/875
+-->
+
+<!--
+Por padrão autores mantém todos os direitos de cópia
 
 Softwares das pessoas desenvolvedoras que usam app.etica.dev sem licença
 explícita ou que possam ser facilmente inferidas de 
@@ -114,6 +140,10 @@ explícita ou que possam ser facilmente inferidas de
 ## Licença da documentação ajuda.etica.dev
 
 Domínio Público.
+
+Citação de fonte original em obras derivadas em nome da
+[Etica.AI](https://etica.ai) é bem vinda, mas não é exigida, nem mesmo como
+obrigação moral.
 
 Favor renomear referências a Etica.Dev (em especial os guias de como conectar
 ao Tsuru) caso reuse para outros usuários.
